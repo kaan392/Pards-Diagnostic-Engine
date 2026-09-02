@@ -1,0 +1,443 @@
+[
+  {
+    "id": "kernel_001",
+    "pattern": "kernel headers not found",
+    "problem": "missing_kernel_headers",
+    "severity": "medium",
+    "solution": "install_kernel_headers"
+  },
+  {
+    "id": "kernel_002",
+    "pattern": "failed to load module",
+    "problem": "kernel_module_failed",
+    "severity": "high",
+    "solution": "diagnose_kernel_module"
+  },
+  {
+    "id": "kernel_003",
+    "pattern": "module not found",
+    "problem": "kernel_module_missing",
+    "severity": "medium",
+    "solution": "install_kernel_module"
+  },
+  {
+    "id": "kernel_004",
+    "pattern": "kernel panic",
+    "problem": "kernel_panic",
+    "severity": "high",
+    "solution": "diagnose_kernel_panic"
+  },
+  {
+    "id": "kernel_005",
+    "pattern": "oops",
+    "problem": "kernel_oops",
+    "severity": "high",
+    "solution": "diagnose_kernel_oops"
+  },
+  {
+    "id": "kernel_006",
+    "pattern": "general protection fault",
+    "problem": "kernel_general_protection_fault",
+    "severity": "high",
+    "solution": "diagnose_kernel_fault"
+  },
+  {
+    "id": "kernel_007",
+    "pattern": "segmentation fault",
+    "problem": "kernel_segmentation_fault",
+    "severity": "high",
+    "solution": "diagnose_kernel_fault"
+  },
+  {
+    "id": "kernel_008",
+    "pattern": "tainted",
+    "problem": "kernel_tainted",
+    "severity": "medium",
+    "solution": "diagnose_kernel_taint"
+  },
+  {
+    "id": "kernel_009",
+    "pattern": "firmware: failed to load",
+    "problem": "firmware_load_failed",
+    "severity": "high",
+    "solution": "install_missing_firmware"
+  },
+  {
+    "id": "kernel_010",
+    "pattern": "firmware: direct-loading",
+    "problem": "firmware_direct_loading",
+    "severity": "info",
+    "solution": "check_firmware_configuration"
+  },
+  {
+    "id": "kernel_011",
+    "pattern": "failed to execute firmware",
+    "problem": "firmware_execution_failed",
+    "severity": "high",
+    "solution": "diagnose_firmware"
+  },
+  {
+    "id": "kernel_012",
+    "pattern": "invalid module format",
+    "problem": "kernel_module_invalid_format",
+    "severity": "high",
+    "solution": "check_kernel_module_version"
+  },
+  {
+    "id": "kernel_013",
+    "pattern": "module verification failed",
+    "problem": "kernel_module_verification_failed",
+    "severity": "high",
+    "solution": "check_module_signature"
+  },
+  {
+    "id": "kernel_014",
+    "pattern": "module signature and/or required key missing",
+    "problem": "kernel_module_signature_missing",
+    "severity": "high",
+    "solution": "check_module_signature"
+  },
+  {
+    "id": "kernel_015",
+    "pattern": "unknown symbol",
+    "problem": "kernel_module_unknown_symbol",
+    "severity": "high",
+    "solution": "check_kernel_module_dependencies"
+  },
+  {
+    "id": "kernel_016",
+    "pattern": "disagrees about version of symbol",
+    "problem": "kernel_module_symbol_version_mismatch",
+    "severity": "high",
+    "solution": "rebuild_kernel_module"
+  },
+  {
+    "id": "kernel_017",
+    "pattern": "module is already loaded",
+    "problem": "kernel_module_already_loaded",
+    "severity": "info",
+    "solution": "check_loaded_modules"
+  },
+  {
+    "id": "kernel_018",
+    "pattern": "module is blacklisted",
+    "problem": "kernel_module_blacklisted",
+    "severity": "medium",
+    "solution": "check_module_blacklist"
+  },
+  {
+    "id": "kernel_019",
+    "pattern": "module_load failed",
+    "problem": "kernel_module_load_failed",
+    "severity": "high",
+    "solution": "diagnose_kernel_module"
+  },
+  {
+    "id": "kernel_020",
+    "pattern": "could not insert module",
+    "problem": "kernel_module_insert_failed",
+    "severity": "high",
+    "solution": "diagnose_kernel_module"
+  },
+  {
+    "id": "kernel_021",
+    "pattern": "read-only filesystem",
+    "problem": "kernel_filesystem_read_only",
+    "severity": "high",
+    "solution": "diagnose_filesystem"
+  },
+  {
+    "id": "kernel_022",
+    "pattern": "i/o error",
+    "problem": "kernel_io_error",
+    "severity": "high",
+    "solution": "diagnose_io_error"
+  },
+  {
+    "id": "kernel_023",
+    "pattern": "buffer i/o error",
+    "problem": "kernel_buffer_io_error",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "kernel_024",
+    "pattern": "watchdog: bug",
+    "problem": "kernel_watchdog_failure",
+    "severity": "high",
+    "solution": "diagnose_kernel_watchdog"
+  },
+  {
+    "id": "kernel_025",
+    "pattern": "soft lockup",
+    "problem": "kernel_soft_lockup",
+    "severity": "high",
+    "solution": "diagnose_kernel_lockup"
+  },
+  {
+    "id": "kernel_026",
+    "pattern": "hard lockup",
+    "problem": "kernel_hard_lockup",
+    "severity": "high",
+    "solution": "diagnose_kernel_lockup"
+  },
+  {
+    "id": "kernel_027",
+    "pattern": "rcu_sched detected stalls",
+    "problem": "kernel_rcu_stall",
+    "severity": "high",
+    "solution": "diagnose_kernel_stall"
+  },
+  {
+    "id": "kernel_028",
+    "pattern": "hung task",
+    "problem": "kernel_hung_task",
+    "severity": "high",
+    "solution": "diagnose_hung_task"
+  },
+  {
+    "id": "kernel_029",
+    "pattern": "watchdog detected hard lockup",
+    "problem": "kernel_watchdog_hard_lockup",
+    "severity": "high",
+    "solution": "diagnose_kernel_lockup"
+  },
+  {
+    "id": "kernel_030",
+    "pattern": "killed process",
+    "problem": "kernel_process_killed",
+    "severity": "medium",
+    "solution": "diagnose_process_termination"
+  },
+  {
+    "id": "kernel_031",
+    "pattern": "kernel module timeout",
+    "problem": "kernel_module_timeout",
+    "severity": "high",
+    "solution": "diagnose_kernel_module"
+  },
+  {
+    "id": "kernel_032",
+    "pattern": "missing kernel symbol",
+    "problem": "kernel_missing_symbol",
+    "severity": "high",
+    "solution": "check_kernel_module_dependencies"
+  },
+  {
+    "id": "kernel_033",
+    "pattern": "module alias mismatch",
+    "problem": "kernel_module_alias_mismatch",
+    "severity": "medium",
+    "solution": "check_kernel_module_version"
+  },
+  {
+    "id": "kernel_034",
+    "pattern": "module signature mismatch",
+    "problem": "kernel_module_signature_mismatch",
+    "severity": "high",
+    "solution": "check_module_signature"
+  },
+  {
+    "id": "kernel_035",
+    "pattern": "module blacklisted unexpectedly",
+    "problem": "kernel_module_unexpected_blacklist",
+    "severity": "medium",
+    "solution": "check_module_blacklist"
+  },
+  {
+    "id": "kernel_036",
+    "pattern": "read-only root filesystem",
+    "problem": "kernel_root_filesystem_read_only",
+    "severity": "high",
+    "solution": "diagnose_filesystem"
+  },
+  {
+    "id": "kernel_037",
+    "pattern": "I/O error on disk",
+    "problem": "kernel_disk_io_error",
+    "severity": "high",
+    "solution": "diagnose_io_error"
+  },
+  {
+    "id": "kernel_038",
+    "pattern": "buffer I/O error on block device",
+    "problem": "kernel_block_buffer_io_error",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "kernel_039",
+    "pattern": "watchdog timeout reached",
+    "problem": "kernel_watchdog_timeout",
+    "severity": "high",
+    "solution": "diagnose_kernel_watchdog"
+  },
+  {
+    "id": "kernel_040",
+    "pattern": "soft lockup while booting",
+    "problem": "kernel_soft_lockup_boot",
+    "severity": "high",
+    "solution": "diagnose_kernel_lockup"
+  },
+  {
+    "id": "kernel_041",
+    "pattern": "hard lockup after update",
+    "problem": "kernel_hard_lockup_update",
+    "severity": "high",
+    "solution": "diagnose_kernel_lockup"
+  },
+  {
+    "id": "kernel_042",
+    "pattern": "RCU stall detected",
+    "problem": "kernel_rcu_stall_detected",
+    "severity": "high",
+    "solution": "diagnose_kernel_stall"
+  },
+  {
+    "id": "kernel_043",
+    "pattern": "hung task timeout",
+    "problem": "kernel_hung_task_timeout",
+    "severity": "high",
+    "solution": "diagnose_hung_task"
+  },
+  {
+    "id": "kernel_044",
+    "pattern": "process killed by oom",
+    "problem": "kernel_oom_process_killed",
+    "severity": "high",
+    "solution": "diagnose_process_termination"
+  },
+  {
+    "id": "kernel_045",
+    "pattern": "kernel page fault",
+    "problem": "kernel_page_fault",
+    "severity": "high",
+    "solution": "diagnose_kernel_fault"
+  },
+  {
+    "id": "kernel_046",
+    "pattern": "out of memory killer triggered",
+    "problem": "kernel_oom_killer_triggered",
+    "severity": "high",
+    "solution": "diagnose_process_termination"
+  },
+  {
+    "id": "kernel_047",
+    "pattern": "firmware not found during boot",
+    "problem": "firmware_not_found_during_boot",
+    "severity": "high",
+    "solution": "install_missing_firmware"
+  },
+  {
+    "id": "kernel_048",
+    "pattern": "firmware rejected by kernel",
+    "problem": "firmware_rejected_by_kernel",
+    "severity": "medium",
+    "solution": "check_firmware_configuration"
+  },
+  {
+    "id": "kernel_049",
+    "pattern": "invalid kernel memory access",
+    "problem": "kernel_invalid_memory_access",
+    "severity": "high",
+    "solution": "diagnose_kernel_fault"
+  },
+  {
+    "id": "kernel_050",
+    "pattern": "bad page state",
+    "problem": "kernel_bad_page_state",
+    "severity": "high",
+    "solution": "diagnose_kernel_fault"
+  },
+  {
+    "id": "kernel_051",
+    "pattern": "kernel trace warning",
+    "problem": "kernel_trace_warning",
+    "severity": "info",
+    "solution": "diagnose_kernel_taint"
+  },
+  {
+    "id": "kernel_052",
+    "pattern": "modules no longer compatible",
+    "problem": "kernel_modules_incompatible",
+    "severity": "high",
+    "solution": "rebuild_kernel_module"
+  },
+  {
+    "id": "kernel_053",
+    "pattern": "module stuck in loading state",
+    "problem": "kernel_module_stuck_loading",
+    "severity": "high",
+    "solution": "diagnose_kernel_module"
+  },
+  {
+    "id": "kernel_054",
+    "pattern": "module load denied by policy",
+    "problem": "kernel_module_load_denied",
+    "severity": "medium",
+    "solution": "check_module_signature"
+  },
+  {
+    "id": "kernel_055",
+    "pattern": "pci device reset failure",
+    "problem": "kernel_pci_reset_failure",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "kernel_056",
+    "pattern": "kernel timer bug",
+    "problem": "kernel_timer_bug",
+    "severity": "medium",
+    "solution": "diagnose_kernel_stall"
+  },
+  {
+    "id": "kernel_057",
+    "pattern": "scheduler warning",
+    "problem": "kernel_scheduler_warning",
+    "severity": "info",
+    "solution": "diagnose_kernel_taint"
+  },
+  {
+    "id": "kernel_058",
+    "pattern": "suspend failure after kernel patch",
+    "problem": "kernel_suspend_failure_after_patch",
+    "severity": "medium",
+    "solution": "diagnose_kernel_oops"
+  },
+  {
+    "id": "kernel_059",
+    "pattern": "kernel panic during boot",
+    "problem": "kernel_panic_during_boot",
+    "severity": "high",
+    "solution": "diagnose_kernel_panic"
+  },
+  {
+    "id": "kernel_060",
+    "pattern": "module verification failed",
+    "problem": "kernel_module_verification_failed_again",
+    "severity": "high",
+    "solution": "check_module_signature"
+  },
+  {
+    "id": "kernel_061",
+    "pattern": "unexpected kernel taint flag",
+    "problem": "kernel_unexpected_taint_flag",
+    "severity": "medium",
+    "solution": "diagnose_kernel_taint"
+  },
+  {
+    "id": "kernel_062",
+    "pattern": "system stopped responding after update",
+    "problem": "kernel_post_update_unresponsive",
+    "severity": "high",
+    "solution": "diagnose_kernel_lockup"
+  },
+  {
+    "id": "kernel_063",
+    "pattern": "device timeout after suspend",
+    "problem": "kernel_device_timeout_after_suspend",
+    "severity": "high",
+    "solution": "diagnose_kernel_watchdog"
+  }
+]

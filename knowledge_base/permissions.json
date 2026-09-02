@@ -1,0 +1,443 @@
+[
+  {
+    "id": "permissions_001",
+    "pattern": "Permission denied",
+    "problem": "permission_denied",
+    "severity": "medium",
+    "solution": "check_file_permissions"
+  },
+  {
+    "id": "permissions_002",
+    "pattern": "Operation not permitted",
+    "problem": "operation_not_permitted",
+    "severity": "medium",
+    "solution": "check_permissions"
+  },
+  {
+    "id": "permissions_003",
+    "pattern": "Access denied",
+    "problem": "access_denied",
+    "severity": "medium",
+    "solution": "check_permissions"
+  },
+  {
+    "id": "permissions_004",
+    "pattern": "not in the sudoers file",
+    "problem": "user_not_in_sudoers",
+    "severity": "high",
+    "solution": "check_sudo_permissions"
+  },
+  {
+    "id": "permissions_005",
+    "pattern": "sudo: command not found",
+    "problem": "sudo_missing",
+    "severity": "high",
+    "solution": "install_sudo"
+  },
+  {
+    "id": "permissions_006",
+    "pattern": "sudoers syntax error",
+    "problem": "sudoers_syntax_error",
+    "severity": "high",
+    "solution": "repair_sudoers"
+  },
+  {
+    "id": "permissions_007",
+    "pattern": "unable to initialize policy plugin",
+    "problem": "sudo_policy_plugin_error",
+    "severity": "high",
+    "solution": "diagnose_sudo"
+  },
+  {
+    "id": "permissions_008",
+    "pattern": "Authentication is required",
+    "problem": "authentication_required",
+    "severity": "medium",
+    "solution": "request_authentication"
+  },
+  {
+    "id": "permissions_009",
+    "pattern": "Authorization failed",
+    "problem": "authorization_failed",
+    "severity": "high",
+    "solution": "check_authorization"
+  },
+  {
+    "id": "permissions_010",
+    "pattern": "Failed to authenticate",
+    "problem": "authentication_failed",
+    "severity": "medium",
+    "solution": "check_user_credentials"
+  },
+  {
+    "id": "permissions_011",
+    "pattern": "Failed to set permissions",
+    "problem": "set_permissions_failed",
+    "severity": "medium",
+    "solution": "check_file_permissions"
+  },
+  {
+    "id": "permissions_012",
+    "pattern": "chmod: changing permissions",
+    "problem": "chmod_failed",
+    "severity": "medium",
+    "solution": "check_file_permissions"
+  },
+  {
+    "id": "permissions_013",
+    "pattern": "chown: changing ownership",
+    "problem": "chown_failed",
+    "severity": "medium",
+    "solution": "check_file_ownership"
+  },
+  {
+    "id": "permissions_014",
+    "pattern": "Operation not allowed",
+    "problem": "operation_not_allowed",
+    "severity": "medium",
+    "solution": "check_permissions"
+  },
+  {
+    "id": "permissions_015",
+    "pattern": "Read-only file system",
+    "problem": "read_only_permission",
+    "severity": "high",
+    "solution": "diagnose_filesystem"
+  },
+  {
+    "id": "permissions_016",
+    "pattern": "cannot open file for writing",
+    "problem": "file_write_permission_denied",
+    "severity": "medium",
+    "solution": "check_file_permissions"
+  },
+  {
+    "id": "permissions_017",
+    "pattern": "cannot create directory",
+    "problem": "directory_creation_denied",
+    "severity": "medium",
+    "solution": "check_directory_permissions"
+  },
+  {
+    "id": "permissions_018",
+    "pattern": "cannot remove file",
+    "problem": "file_delete_permission_denied",
+    "severity": "medium",
+    "solution": "check_file_permissions"
+  },
+  {
+    "id": "permissions_019",
+    "pattern": "cannot change directory",
+    "problem": "directory_access_denied",
+    "severity": "medium",
+    "solution": "check_directory_permissions"
+  },
+  {
+    "id": "permissions_020",
+    "pattern": "Failed to change ownership",
+    "problem": "ownership_change_failed",
+    "severity": "medium",
+    "solution": "check_file_ownership"
+  },
+  {
+    "id": "permissions_021",
+    "pattern": "Failed to change mode",
+    "problem": "file_mode_change_failed",
+    "severity": "medium",
+    "solution": "check_file_permissions"
+  },
+  {
+    "id": "permissions_022",
+    "pattern": "ACL operation failed",
+    "problem": "acl_operation_failed",
+    "severity": "medium",
+    "solution": "diagnose_acl"
+  },
+  {
+    "id": "permissions_023",
+    "pattern": "setfacl: Permission denied",
+    "problem": "setfacl_permission_denied",
+    "severity": "medium",
+    "solution": "diagnose_acl"
+  },
+  {
+    "id": "permissions_024",
+    "pattern": "getfacl: Permission denied",
+    "problem": "getfacl_permission_denied",
+    "severity": "medium",
+    "solution": "diagnose_acl"
+  },
+  {
+    "id": "permissions_025",
+    "pattern": "polkit authentication agent",
+    "problem": "polkit_authentication_issue",
+    "severity": "medium",
+    "solution": "diagnose_polkit"
+  },
+  {
+    "id": "permissions_026",
+    "pattern": "polkit: Authorization failed",
+    "problem": "polkit_authorization_failed",
+    "severity": "high",
+    "solution": "diagnose_polkit"
+  },
+  {
+    "id": "permissions_027",
+    "pattern": "Access denied by policy",
+    "problem": "policy_access_denied",
+    "severity": "high",
+    "solution": "diagnose_security_policy"
+  },
+  {
+    "id": "permissions_028",
+    "pattern": "SELinux is preventing",
+    "problem": "selinux_permission_denied",
+    "severity": "high",
+    "solution": "diagnose_selinux"
+  },
+  {
+    "id": "permissions_029",
+    "pattern": "AppArmor DENIED",
+    "problem": "apparmor_permission_denied",
+    "severity": "high",
+    "solution": "diagnose_apparmor"
+  },
+  {
+    "id": "permissions_030",
+    "pattern": "capability denied",
+    "problem": "linux_capability_denied",
+    "severity": "high",
+    "solution": "diagnose_linux_capabilities"
+  },
+  {
+    "id": "permissions_031",
+    "pattern": "file permission denied",
+    "problem": "file_permission_denied_again",
+    "severity": "high",
+    "solution": "check_file_permissions"
+  },
+  {
+    "id": "permissions_032",
+    "pattern": "directory permission denied",
+    "problem": "directory_permission_denied_again",
+    "severity": "high",
+    "solution": "check_directory_permissions"
+  },
+  {
+    "id": "permissions_033",
+    "pattern": "sudoers syntax error",
+    "problem": "sudoers_syntax_error_again",
+    "severity": "high",
+    "solution": "repair_sudoers"
+  },
+  {
+    "id": "permissions_034",
+    "pattern": "user not in sudoers",
+    "problem": "user_not_in_sudoers_again",
+    "severity": "high",
+    "solution": "check_sudo_permissions"
+  },
+  {
+    "id": "permissions_035",
+    "pattern": "sudo command missing",
+    "problem": "sudo_command_missing",
+    "severity": "medium",
+    "solution": "install_sudo"
+  },
+  {
+    "id": "permissions_036",
+    "pattern": "polkit auth failed",
+    "problem": "polkit_auth_failed",
+    "severity": "high",
+    "solution": "diagnose_polkit"
+  },
+  {
+    "id": "permissions_037",
+    "pattern": "authorization request denied",
+    "problem": "authorization_request_denied",
+    "severity": "high",
+    "solution": "check_authorization"
+  },
+  {
+    "id": "permissions_038",
+    "pattern": "authentication required repeatedly",
+    "problem": "authentication_required_repeatedly",
+    "severity": "medium",
+    "solution": "request_authentication"
+  },
+  {
+    "id": "permissions_039",
+    "pattern": "credential verification failed",
+    "problem": "credential_verification_failed",
+    "severity": "high",
+    "solution": "check_user_credentials"
+  },
+  {
+    "id": "permissions_040",
+    "pattern": "ownership change failed",
+    "problem": "ownership_change_failed_again",
+    "severity": "high",
+    "solution": "check_file_ownership"
+  },
+  {
+    "id": "permissions_041",
+    "pattern": "chmod operation failed",
+    "problem": "chmod_operation_failed",
+    "severity": "high",
+    "solution": "check_permissions"
+  },
+  {
+    "id": "permissions_042",
+    "pattern": "chown operation failed",
+    "problem": "chown_operation_failed",
+    "severity": "high",
+    "solution": "check_file_ownership"
+  },
+  {
+    "id": "permissions_043",
+    "pattern": "ACL operation failed",
+    "problem": "acl_operation_failed_again",
+    "severity": "high",
+    "solution": "diagnose_acl"
+  },
+  {
+    "id": "permissions_044",
+    "pattern": "setfacl denied",
+    "problem": "setfacl_denied",
+    "severity": "high",
+    "solution": "diagnose_acl"
+  },
+  {
+    "id": "permissions_045",
+    "pattern": "getfacl failed",
+    "problem": "getfacl_failed",
+    "severity": "medium",
+    "solution": "diagnose_acl"
+  },
+  {
+    "id": "permissions_046",
+    "pattern": "SELinux denied access",
+    "problem": "selinux_denied_access",
+    "severity": "high",
+    "solution": "diagnose_selinux"
+  },
+  {
+    "id": "permissions_047",
+    "pattern": "AppArmor profile denied",
+    "problem": "apparmor_profile_denied",
+    "severity": "high",
+    "solution": "diagnose_apparmor"
+  },
+  {
+    "id": "permissions_048",
+    "pattern": "capability denied",
+    "problem": "capability_denied",
+    "severity": "high",
+    "solution": "diagnose_linux_capabilities"
+  },
+  {
+    "id": "permissions_049",
+    "pattern": "read-only filesystem access denied",
+    "problem": "read_only_access_denied",
+    "severity": "high",
+    "solution": "diagnose_filesystem"
+  },
+  {
+    "id": "permissions_050",
+    "pattern": "permission check failure",
+    "problem": "permission_check_failure",
+    "severity": "high",
+    "solution": "check_permissions"
+  },
+  {
+    "id": "permissions_051",
+    "pattern": "user cannot write to app directory",
+    "problem": "user_cannot_write_app_dir",
+    "severity": "high",
+    "solution": "check_directory_permissions"
+  },
+  {
+    "id": "permissions_052",
+    "pattern": "service cannot access config file",
+    "problem": "service_config_file_denied",
+    "severity": "high",
+    "solution": "check_file_permissions"
+  },
+  {
+    "id": "permissions_053",
+    "pattern": "root access request blocked",
+    "problem": "root_access_request_blocked",
+    "severity": "high",
+    "solution": "check_authorization"
+  },
+  {
+    "id": "permissions_054",
+    "pattern": "sudo policy plugin error",
+    "problem": "sudo_policy_plugin_error_again",
+    "severity": "high",
+    "solution": "diagnose_sudo"
+  },
+  {
+    "id": "permissions_055",
+    "pattern": "authentication timeout",
+    "problem": "authentication_timeout",
+    "severity": "medium",
+    "solution": "request_authentication"
+  },
+  {
+    "id": "permissions_056",
+    "pattern": "policykit service unavailable",
+    "problem": "polkit_service_unavailable",
+    "severity": "high",
+    "solution": "diagnose_polkit"
+  },
+  {
+    "id": "permissions_057",
+    "pattern": "system policy blocked operation",
+    "problem": "system_policy_blocked_operation",
+    "severity": "high",
+    "solution": "diagnose_security_policy"
+  },
+  {
+    "id": "permissions_058",
+    "pattern": "file deletion permission denied",
+    "problem": "file_delete_permission_denied_again",
+    "severity": "high",
+    "solution": "check_file_permissions"
+  },
+  {
+    "id": "permissions_059",
+    "pattern": "directory creation denied",
+    "problem": "directory_creation_denied_again",
+    "severity": "high",
+    "solution": "check_directory_permissions"
+  },
+  {
+    "id": "permissions_060",
+    "pattern": "file mode change failed",
+    "problem": "file_mode_change_failed_again",
+    "severity": "high",
+    "solution": "check_file_permissions"
+  },
+  {
+    "id": "permissions_061",
+    "pattern": "ACL rule invalid",
+    "problem": "acl_rule_invalid",
+    "severity": "medium",
+    "solution": "diagnose_acl"
+  },
+  {
+    "id": "permissions_062",
+    "pattern": "security policy mismatch",
+    "problem": "security_policy_mismatch",
+    "severity": "high",
+    "solution": "diagnose_security_policy"
+  },
+  {
+    "id": "permissions_063",
+    "pattern": "capability required but missing",
+    "problem": "capability_missing",
+    "severity": "high",
+    "solution": "diagnose_linux_capabilities"
+  }
+]

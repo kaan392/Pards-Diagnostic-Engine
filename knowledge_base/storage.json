@@ -1,0 +1,443 @@
+[
+  {
+    "id": "storage_001",
+    "pattern": "No space left on device",
+    "problem": "disk_full",
+    "severity": "high",
+    "solution": "check_disk_usage"
+  },
+  {
+    "id": "storage_002",
+    "pattern": "Read-only file system",
+    "problem": "filesystem_read_only",
+    "severity": "high",
+    "solution": "diagnose_filesystem"
+  },
+  {
+    "id": "storage_003",
+    "pattern": "Input/output error",
+    "problem": "storage_io_error",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "storage_004",
+    "pattern": "Buffer I/O error",
+    "problem": "storage_buffer_io_error",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "storage_005",
+    "pattern": "I/O error, dev",
+    "problem": "storage_device_io_error",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "storage_006",
+    "pattern": "EXT4-fs error",
+    "problem": "ext4_filesystem_error",
+    "severity": "high",
+    "solution": "diagnose_ext4"
+  },
+  {
+    "id": "storage_007",
+    "pattern": "EXT4-fs warning",
+    "problem": "ext4_filesystem_warning",
+    "severity": "medium",
+    "solution": "diagnose_ext4"
+  },
+  {
+    "id": "storage_008",
+    "pattern": "XFS (",
+    "problem": "xfs_filesystem_issue",
+    "severity": "high",
+    "solution": "diagnose_xfs"
+  },
+  {
+    "id": "storage_009",
+    "pattern": "BTRFS error",
+    "problem": "btrfs_filesystem_error",
+    "severity": "high",
+    "solution": "diagnose_btrfs"
+  },
+  {
+    "id": "storage_010",
+    "pattern": "BTRFS warning",
+    "problem": "btrfs_filesystem_warning",
+    "severity": "medium",
+    "solution": "diagnose_btrfs"
+  },
+  {
+    "id": "storage_011",
+    "pattern": "filesystem check failed",
+    "problem": "filesystem_check_failed",
+    "severity": "high",
+    "solution": "run_filesystem_check"
+  },
+  {
+    "id": "storage_012",
+    "pattern": "fsck failed",
+    "problem": "fsck_failed",
+    "severity": "high",
+    "solution": "diagnose_filesystem_check"
+  },
+  {
+    "id": "storage_013",
+    "pattern": "UNEXPECTED INCONSISTENCY",
+    "problem": "filesystem_inconsistency",
+    "severity": "high",
+    "solution": "run_filesystem_repair"
+  },
+  {
+    "id": "storage_014",
+    "pattern": "Journal checksum error",
+    "problem": "filesystem_journal_checksum_error",
+    "severity": "high",
+    "solution": "diagnose_filesystem_journal"
+  },
+  {
+    "id": "storage_015",
+    "pattern": "journal has aborted",
+    "problem": "filesystem_journal_aborted",
+    "severity": "high",
+    "solution": "diagnose_filesystem_journal"
+  },
+  {
+    "id": "storage_016",
+    "pattern": "mount failed",
+    "problem": "filesystem_mount_failed",
+    "severity": "high",
+    "solution": "diagnose_mount"
+  },
+  {
+    "id": "storage_017",
+    "pattern": "wrong fs type",
+    "problem": "wrong_filesystem_type",
+    "severity": "high",
+    "solution": "diagnose_filesystem_type"
+  },
+  {
+    "id": "storage_018",
+    "pattern": "bad superblock",
+    "problem": "filesystem_bad_superblock",
+    "severity": "high",
+    "solution": "diagnose_filesystem_superblock"
+  },
+  {
+    "id": "storage_019",
+    "pattern": "unable to read superblock",
+    "problem": "filesystem_superblock_unreadable",
+    "severity": "high",
+    "solution": "diagnose_filesystem_superblock"
+  },
+  {
+    "id": "storage_020",
+    "pattern": "blk_update_request",
+    "problem": "block_device_request_error",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "storage_021",
+    "pattern": "Buffer I/O error on dev",
+    "problem": "block_device_buffer_error",
+    "severity": "medium",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "storage_022",
+    "pattern": "ata error",
+    "problem": "ata_device_error",
+    "severity": "high",
+    "solution": "diagnose_ata_device"
+  },
+  {
+    "id": "storage_023",
+    "pattern": "hard resetting link",
+    "problem": "storage_link_reset",
+    "severity": "high",
+    "solution": "diagnose_storage_link"
+  },
+  {
+    "id": "storage_024",
+    "pattern": "nvme timeout",
+    "problem": "nvme_timeout",
+    "severity": "high",
+    "solution": "diagnose_nvme"
+  },
+  {
+    "id": "storage_025",
+    "pattern": "nvme reset controller",
+    "problem": "nvme_controller_reset",
+    "severity": "high",
+    "solution": "diagnose_nvme"
+  },
+  {
+    "id": "storage_026",
+    "pattern": "critical medium error",
+    "problem": "storage_critical_medium_error",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "storage_027",
+    "pattern": "SMART overall-health",
+    "problem": "smart_health_warning",
+    "severity": "high",
+    "solution": "check_smart_health"
+  },
+  {
+    "id": "storage_028",
+    "pattern": "Disk quota exceeded",
+    "problem": "disk_quota_exceeded",
+    "severity": "medium",
+    "solution": "check_disk_quota"
+  },
+  {
+    "id": "storage_029",
+    "pattern": "mount point does not exist",
+    "problem": "mount_point_missing",
+    "severity": "medium",
+    "solution": "check_mount_point"
+  },
+  {
+    "id": "storage_030",
+    "pattern": "device or resource busy",
+    "problem": "storage_device_busy",
+    "severity": "medium",
+    "solution": "diagnose_busy_device"
+  },
+  {
+    "id": "storage_031",
+    "pattern": "disk usage above threshold",
+    "problem": "disk_usage_above_threshold",
+    "severity": "medium",
+    "solution": "check_disk_usage"
+  },
+  {
+    "id": "storage_032",
+    "pattern": "filesystem is read-only",
+    "problem": "filesystem_read_only_again",
+    "severity": "high",
+    "solution": "diagnose_filesystem"
+  },
+  {
+    "id": "storage_033",
+    "pattern": "IO error on storage device",
+    "problem": "storage_io_error_again",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "storage_034",
+    "pattern": "ext4 journal problem",
+    "problem": "ext4_journal_problem",
+    "severity": "high",
+    "solution": "diagnose_ext4"
+  },
+  {
+    "id": "storage_035",
+    "pattern": "xfs metadata issue",
+    "problem": "xfs_metadata_issue",
+    "severity": "high",
+    "solution": "diagnose_xfs"
+  },
+  {
+    "id": "storage_036",
+    "pattern": "btrfs metadata issue",
+    "problem": "btrfs_metadata_issue",
+    "severity": "high",
+    "solution": "diagnose_btrfs"
+  },
+  {
+    "id": "storage_037",
+    "pattern": "filesystem check failed",
+    "problem": "filesystem_check_failed_again",
+    "severity": "high",
+    "solution": "run_filesystem_check"
+  },
+  {
+    "id": "storage_038",
+    "pattern": "filesystem repair recommended",
+    "problem": "filesystem_repair_recommended",
+    "severity": "high",
+    "solution": "run_filesystem_repair"
+  },
+  {
+    "id": "storage_039",
+    "pattern": "journal replay failed",
+    "problem": "journal_replay_failed",
+    "severity": "high",
+    "solution": "diagnose_filesystem_journal"
+  },
+  {
+    "id": "storage_040",
+    "pattern": "mount point invalid",
+    "problem": "mount_point_invalid",
+    "severity": "medium",
+    "solution": "diagnose_mount"
+  },
+  {
+    "id": "storage_041",
+    "pattern": "wrong filesystem type",
+    "problem": "wrong_filesystem_type_again",
+    "severity": "high",
+    "solution": "diagnose_filesystem_type"
+  },
+  {
+    "id": "storage_042",
+    "pattern": "superblock unreadable",
+    "problem": "superblock_unreadable",
+    "severity": "high",
+    "solution": "diagnose_filesystem_superblock"
+  },
+  {
+    "id": "storage_043",
+    "pattern": "ATA device error",
+    "problem": "ata_device_error_again",
+    "severity": "high",
+    "solution": "diagnose_ata_device"
+  },
+  {
+    "id": "storage_044",
+    "pattern": "storage link reset",
+    "problem": "storage_link_reset_again",
+    "severity": "medium",
+    "solution": "diagnose_storage_link"
+  },
+  {
+    "id": "storage_045",
+    "pattern": "nvme timeout detected",
+    "problem": "nvme_timeout_detected_again",
+    "severity": "high",
+    "solution": "diagnose_nvme"
+  },
+  {
+    "id": "storage_046",
+    "pattern": "smart health warning",
+    "problem": "smart_health_warning",
+    "severity": "high",
+    "solution": "check_smart_health"
+  },
+  {
+    "id": "storage_047",
+    "pattern": "disk quota exceeded",
+    "problem": "disk_quota_exceeded_again",
+    "severity": "medium",
+    "solution": "check_disk_quota"
+  },
+  {
+    "id": "storage_048",
+    "pattern": "mount point missing",
+    "problem": "mount_point_missing_again",
+    "severity": "medium",
+    "solution": "check_mount_point"
+  },
+  {
+    "id": "storage_049",
+    "pattern": "device busy while mounting",
+    "problem": "device_busy_while_mounting",
+    "severity": "medium",
+    "solution": "diagnose_busy_device"
+  },
+  {
+    "id": "storage_050",
+    "pattern": "filesystem corruption suspected",
+    "problem": "filesystem_corruption_suspected",
+    "severity": "high",
+    "solution": "diagnose_filesystem"
+  },
+  {
+    "id": "storage_051",
+    "pattern": "block device request error",
+    "problem": "block_device_request_error_again",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "storage_052",
+    "pattern": "buffer error on disk",
+    "problem": "buffer_error_on_disk",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "storage_053",
+    "pattern": "storage controller reset",
+    "problem": "storage_controller_reset",
+    "severity": "high",
+    "solution": "diagnose_nvme"
+  },
+  {
+    "id": "storage_054",
+    "pattern": "journal checksum mismatch",
+    "problem": "journal_checksum_mismatch",
+    "severity": "medium",
+    "solution": "diagnose_filesystem_journal"
+  },
+  {
+    "id": "storage_055",
+    "pattern": "cannot remount rw",
+    "problem": "cannot_remount_rw",
+    "severity": "high",
+    "solution": "diagnose_mount"
+  },
+  {
+    "id": "storage_056",
+    "pattern": "mount operation denied",
+    "problem": "mount_operation_denied",
+    "severity": "high",
+    "solution": "diagnose_mount"
+  },
+  {
+    "id": "storage_057",
+    "pattern": "ext4 fsck required",
+    "problem": "ext4_fsck_required",
+    "severity": "high",
+    "solution": "run_filesystem_check"
+  },
+  {
+    "id": "storage_058",
+    "pattern": "xfs repair recommended",
+    "problem": "xfs_repair_recommended",
+    "severity": "high",
+    "solution": "run_filesystem_repair"
+  },
+  {
+    "id": "storage_059",
+    "pattern": "btrfs scrub required",
+    "problem": "btrfs_scrub_required",
+    "severity": "medium",
+    "solution": "diagnose_btrfs"
+  },
+  {
+    "id": "storage_060",
+    "pattern": "disk near full",
+    "problem": "disk_near_full",
+    "severity": "medium",
+    "solution": "check_disk_usage"
+  },
+  {
+    "id": "storage_061",
+    "pattern": "device not ready",
+    "problem": "storage_device_not_ready",
+    "severity": "medium",
+    "solution": "diagnose_storage_device"
+  },
+  {
+    "id": "storage_062",
+    "pattern": "stale mount entry",
+    "problem": "stale_mount_entry",
+    "severity": "medium",
+    "solution": "check_mount_point"
+  },
+  {
+    "id": "storage_063",
+    "pattern": "storage stack error",
+    "problem": "storage_stack_error",
+    "severity": "high",
+    "solution": "diagnose_storage_device"
+  }
+]

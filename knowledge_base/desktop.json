@@ -1,0 +1,450 @@
+[
+  {
+    "id": "desktop_001",
+    "pattern": "gnome-shell crashed",
+    "problem": "gnome_shell_crash",
+    "severity": "high",
+    "solution": "diagnose_gnome_shell"
+  },
+  {
+    "id": "desktop_002",
+    "pattern": "gnome-session crashed",
+    "problem": "gnome_session_crash",
+    "severity": "high",
+    "solution": "diagnose_gnome_session"
+  },
+  {
+    "id": "desktop_003",
+    "pattern": "Failed to start GNOME Display Manager",
+    "problem": "gdm_start_failure",
+    "severity": "high",
+    "solution": "diagnose_gdm"
+  },
+  {
+    "id": "desktop_004",
+    "pattern": "gdm.service: Failed",
+    "problem": "gdm_service_failure",
+    "severity": "high",
+    "solution": "diagnose_gdm"
+  },
+  {
+    "id": "desktop_005",
+    "pattern": "Failed to start display-manager",
+    "problem": "display_manager_start_failure",
+    "severity": "high",
+    "solution": "diagnose_display_manager"
+  },
+  {
+    "id": "desktop_006",
+    "pattern": "Unable to open display",
+    "problem": "display_open_failed",
+    "severity": "medium",
+    "solution": "diagnose_display"
+  },
+  {
+    "id": "desktop_007",
+    "pattern": "Cannot open display",
+    "problem": "display_connection_failed",
+    "severity": "medium",
+    "solution": "diagnose_display"
+  },
+  {
+    "id": "desktop_008",
+    "pattern": "Failed to initialize display",
+    "problem": "display_initialization_failed",
+    "severity": "high",
+    "solution": "diagnose_display"
+  },
+  {
+    "id": "desktop_009",
+    "pattern": "No protocol specified",
+    "problem": "display_authorization_failed",
+    "severity": "medium",
+    "solution": "diagnose_display_authorization"
+  },
+  {
+    "id": "desktop_010",
+    "pattern": "X connection to",
+    "problem": "x_connection_lost",
+    "severity": "high",
+    "solution": "diagnose_x_connection"
+  },
+  {
+    "id": "desktop_011",
+    "pattern": "X server crashed",
+    "problem": "x_server_crash",
+    "severity": "high",
+    "solution": "diagnose_xorg"
+  },
+  {
+    "id": "desktop_012",
+    "pattern": "Wayland session failed",
+    "problem": "wayland_session_failed",
+    "severity": "high",
+    "solution": "diagnose_wayland"
+  },
+  {
+    "id": "desktop_013",
+    "pattern": "Wayland connection failed",
+    "problem": "wayland_connection_failed",
+    "severity": "medium",
+    "solution": "diagnose_wayland"
+  },
+  {
+    "id": "desktop_014",
+    "pattern": "Failed to launch application",
+    "problem": "application_launch_failed",
+    "severity": "medium",
+    "solution": "diagnose_application_launch"
+  },
+  {
+    "id": "desktop_015",
+    "pattern": "Application crashed",
+    "problem": "desktop_application_crash",
+    "severity": "medium",
+    "solution": "diagnose_application_crash"
+  },
+  {
+    "id": "desktop_016",
+    "pattern": "Application not responding",
+    "problem": "application_not_responding",
+    "severity": "medium",
+    "solution": "diagnose_application"
+  },
+  {
+    "id": "desktop_017",
+    "pattern": "Desktop environment failed",
+    "problem": "desktop_environment_failure",
+    "severity": "high",
+    "solution": "diagnose_desktop_environment"
+  },
+  {
+    "id": "desktop_018",
+    "pattern": "Failed to load desktop environment",
+    "problem": "desktop_environment_load_failed",
+    "severity": "high",
+    "solution": "diagnose_desktop_environment"
+  },
+  {
+    "id": "desktop_019",
+    "pattern": "Panel crashed",
+    "problem": "desktop_panel_crash",
+    "severity": "medium",
+    "solution": "restart_desktop_panel"
+  },
+  {
+    "id": "desktop_020",
+    "pattern": "Window manager crashed",
+    "problem": "window_manager_crash",
+    "severity": "high",
+    "solution": "restart_window_manager"
+  },
+  {
+    "id": "desktop_021",
+    "pattern": "Failed to start window manager",
+    "problem": "window_manager_start_failure",
+    "severity": "high",
+    "solution": "diagnose_window_manager"
+  },
+  {
+    "id": "desktop_022",
+    "pattern": "Failed to load extension",
+    "problem": "desktop_extension_load_failed",
+    "severity": "info",
+    "solution": "diagnose_desktop_extension"
+  },
+  {
+    "id": "desktop_023",
+    "pattern": "Extension crashed",
+    "problem": "desktop_extension_crash",
+    "severity": "medium",
+    "solution": "disable_desktop_extension"
+  },
+  {
+    "id": "desktop_024",
+    "pattern": "Failed to start user session",
+    "problem": "user_session_start_failure",
+    "severity": "high",
+    "solution": "diagnose_user_session"
+  },
+  {
+    "id": "desktop_025",
+    "pattern": "Failed to load user profile",
+    "problem": "user_profile_load_failed",
+    "severity": "high",
+    "solution": "diagnose_user_profile"
+  },
+  {
+    "id": "desktop_026",
+    "pattern": "Failed to mount user directory",
+    "problem": "user_directory_mount_failed",
+    "severity": "high",
+    "solution": "diagnose_user_directory"
+  },
+  {
+    "id": "desktop_027",
+    "pattern": "Screen lock failed",
+    "problem": "screen_lock_failed",
+    "severity": "medium",
+    "solution": "diagnose_screen_lock"
+  },
+  {
+    "id": "desktop_028",
+    "pattern": "Failed to suspend",
+    "problem": "desktop_suspend_failed",
+    "severity": "info",
+    "solution": "diagnose_suspend"
+  },
+  {
+    "id": "desktop_029",
+    "pattern": "Failed to resume",
+    "problem": "desktop_resume_failed",
+    "severity": "medium",
+    "solution": "diagnose_resume"
+  },
+  {
+    "id": "desktop_030",
+    "pattern": "Desktop is not responding",
+    "problem": "desktop_not_responding",
+    "severity": "high",
+    "solution": "diagnose_desktop"
+  },
+  {
+    "id": "desktop_031",
+    "pattern": "desktop login loop",
+    "problem": "desktop_login_loop",
+    "severity": "high",
+    "solution": "diagnose_user_session"
+  },
+  {
+    "id": "desktop_032",
+    "pattern": "desktop session not authorized",
+    "problem": "desktop_session_auth_failed",
+    "severity": "high",
+    "solution": "diagnose_user_session"
+  },
+  {
+    "id": "desktop_033",
+    "pattern": "unable to start gnome shell",
+    "problem": "gnome_shell_start_failed",
+    "severity": "high",
+    "solution": "diagnose_gnome_shell"
+  },
+  {
+    "id": "desktop_034",
+    "pattern": "gnome shell crashed repeatedly",
+    "problem": "gnome_shell_repeated_crash",
+    "severity": "high",
+    "solution": "diagnose_gnome_shell"
+  },
+  {
+    "id": "desktop_035",
+    "pattern": "gdm not responding",
+    "problem": "gdm_not_responding",
+    "severity": "high",
+    "solution": "diagnose_gdm"
+  },
+  {
+    "id": "desktop_036",
+    "pattern": "display manager stuck on black screen",
+    "problem": "display_manager_black_screen",
+    "severity": "high",
+    "solution": "diagnose_display_manager"
+  },
+  {
+    "id": "desktop_037",
+    "pattern": "X11 server failed to start",
+    "problem": "x_server_start_failed",
+    "severity": "high",
+    "solution": "diagnose_x_connection"
+  },
+  {
+    "id": "desktop_038",
+    "pattern": "xorg crashed after resume",
+    "problem": "xorg_resume_crash",
+    "severity": "high",
+    "solution": "diagnose_xorg"
+  },
+  {
+    "id": "desktop_039",
+    "pattern": "wayland session failed to initialize",
+    "problem": "wayland_session_init_failed",
+    "severity": "high",
+    "solution": "diagnose_wayland"
+  },
+  {
+    "id": "desktop_040",
+    "pattern": "desktop compositor crash",
+    "problem": "desktop_compositor_crash",
+    "severity": "high",
+    "solution": "diagnose_desktop_environment"
+  },
+  {
+    "id": "desktop_041",
+    "pattern": "panel failed to load",
+    "problem": "panel_load_failed",
+    "severity": "medium",
+    "solution": "restart_desktop_panel"
+  },
+  {
+    "id": "desktop_042",
+    "pattern": "window manager failed to restart",
+    "problem": "window_manager_restart_failed",
+    "severity": "high",
+    "solution": "restart_window_manager"
+  },
+  {
+    "id": "desktop_043",
+    "pattern": "window manager crashed on startup",
+    "problem": "window_manager_startup_crash",
+    "severity": "high",
+    "solution": "diagnose_window_manager"
+  },
+  {
+    "id": "desktop_044",
+    "pattern": "extension failed to load",
+    "problem": "desktop_extension_load_error",
+    "severity": "info",
+    "solution": "diagnose_desktop_extension"
+  },
+  {
+    "id": "desktop_045",
+    "pattern": "extension caused crash loop",
+    "problem": "desktop_extension_crash_loop",
+    "severity": "medium",
+    "solution": "disable_desktop_extension"
+  },
+  {
+    "id": "desktop_046",
+    "pattern": "user profile not loaded",
+    "problem": "user_profile_load_error",
+    "severity": "high",
+    "solution": "diagnose_user_profile"
+  },
+  {
+    "id": "desktop_047",
+    "pattern": "home directory access denied",
+    "problem": "user_directory_access_denied",
+    "severity": "high",
+    "solution": "diagnose_user_directory"
+  },
+  {
+    "id": "desktop_048",
+    "pattern": "screen lock failed",
+    "problem": "screen_lock_failed",
+    "severity": "medium",
+    "solution": "diagnose_screen_lock"
+  },
+  {
+    "id": "desktop_049",
+    "pattern": "suspend operation failed",
+    "problem": "desktop_suspend_failed_again",
+    "severity": "info",
+    "solution": "diagnose_suspend"
+  },
+  {
+    "id": "desktop_050",
+    "pattern": "resume operation failed",
+    "problem": "desktop_resume_failed_again",
+    "severity": "medium",
+    "solution": "diagnose_resume"
+  },
+  {
+    "id": "desktop_051",
+    "pattern": "desktop freezes after login",
+    "problem": "desktop_freeze_after_login",
+    "severity": "high",
+    "solution": "diagnose_desktop"
+  },
+  {
+    "id": "desktop_052",
+    "pattern": "application launcher not found",
+    "problem": "launcher_not_found",
+    "severity": "medium",
+    "solution": "diagnose_application_launch"
+  },
+  {
+    "id": "desktop_053",
+    "pattern": "application won’t open",
+    "problem": "application_open_failed",
+    "severity": "medium",
+    "solution": "diagnose_application_launch"
+  },
+  {
+    "id": "desktop_054",
+    "pattern": "application crashed unexpectedly",
+    "problem": "application_unexpected_crash",
+    "severity": "medium",
+    "solution": "diagnose_application_crash"
+  },
+  {
+    "id": "desktop_055",
+    "pattern": "app not responding",
+    "problem": "application_not_responding_again",
+    "severity": "medium",
+    "solution": "diagnose_application"
+  },
+  {
+    "id": "desktop_056",
+    "pattern": "gtk theme failed to apply",
+    "problem": "gtk_theme_application_failed",
+    "severity": "info",
+    "solution": "diagnose_desktop_environment"
+  },
+  {
+    "id": "desktop_057",
+    "pattern": "session bus unavailable",
+    "problem": "session_bus_unavailable",
+    "severity": "high",
+    "solution": "diagnose_user_session"
+  },
+  {
+    "id": "desktop_058",
+    "pattern": "gnome settings daemon crash",
+    "problem": "gnome_settings_daemon_crash",
+    "severity": "medium",
+    "solution": "diagnose_gnome_session"
+  },
+  {
+    "id": "desktop_059",
+    "pattern": "login screen loop after update",
+    "problem": "login_loop_after_update",
+    "severity": "high",
+    "solution": "diagnose_display_manager"
+  },
+  {
+    "id": "desktop_060",
+    "pattern": "desktop environment failed to load",
+    "problem": "desktop_environment_load_error",
+    "severity": "high",
+    "solution": "diagnose_desktop_environment"
+  },
+  {
+    "id": "desktop_061",
+    "pattern": "screen sharing denied",
+    "problem": "desktop_screen_sharing_denied",
+    "severity": "info",
+    "solution": "diagnose_display_authorization"
+  },
+  {
+    "id": "desktop_062",
+    "pattern": "display permission failed",
+    "problem": "display_permission_failed",
+    "severity": "medium",
+    "solution": "diagnose_display_authorization"
+  },
+  {
+    "id": "desktop_063",
+    "pattern": "lockscreen auth error",
+    "problem": "lockscreen_auth_failed",
+    "severity": "medium",
+    "solution": "diagnose_user_session"
+  },
+  {
+    "id": "desktop_064",
+    "pattern": "desktop remains blank after boot",
+    "problem": "desktop_blank_after_boot",
+    "severity": "high",
+    "solution": "diagnose_display"
+  }
+]

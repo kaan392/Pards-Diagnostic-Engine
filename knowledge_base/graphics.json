@@ -1,0 +1,443 @@
+[
+  {
+    "id": "graphics_001",
+    "pattern": "vmwgfx seems to be running on an unsupported hypervisor",
+    "problem": "vmwgfx_hypervisor_incompatible",
+    "severity": "info",
+    "solution": "check_graphics_configuration"
+  },
+  {
+    "id": "graphics_002",
+    "pattern": "No screens found",
+    "problem": "display_server_no_screens",
+    "severity": "high",
+    "solution": "diagnose_display_configuration"
+  },
+  {
+    "id": "graphics_003",
+    "pattern": "Failed to initialize the NVIDIA kernel module",
+    "problem": "nvidia_kernel_module_failed",
+    "severity": "high",
+    "solution": "diagnose_nvidia_driver"
+  },
+  {
+    "id": "graphics_004",
+    "pattern": "NVIDIA driver is not loaded",
+    "problem": "nvidia_driver_not_loaded",
+    "severity": "high",
+    "solution": "diagnose_nvidia_driver"
+  },
+  {
+    "id": "graphics_005",
+    "pattern": "amdgpu: failed to initialize",
+    "problem": "amdgpu_initialization_failed",
+    "severity": "high",
+    "solution": "diagnose_amdgpu_driver"
+  },
+  {
+    "id": "graphics_006",
+    "pattern": "i915: probe failed",
+    "problem": "intel_graphics_probe_failed",
+    "severity": "high",
+    "solution": "diagnose_intel_graphics"
+  },
+  {
+    "id": "graphics_007",
+    "pattern": "drm: failed to create",
+    "problem": "drm_initialization_failed",
+    "severity": "high",
+    "solution": "diagnose_drm"
+  },
+  {
+    "id": "graphics_008",
+    "pattern": "GPU has fallen off the bus",
+    "problem": "gpu_fallen_off_bus",
+    "severity": "high",
+    "solution": "diagnose_gpu_hardware"
+  },
+  {
+    "id": "graphics_009",
+    "pattern": "GPU reset",
+    "problem": "gpu_reset",
+    "severity": "medium",
+    "solution": "diagnose_gpu_reset"
+  },
+  {
+    "id": "graphics_010",
+    "pattern": "GPU hang",
+    "problem": "gpu_hang",
+    "severity": "high",
+    "solution": "diagnose_gpu_hang"
+  },
+  {
+    "id": "graphics_011",
+    "pattern": "GPU fault",
+    "problem": "gpu_fault",
+    "severity": "high",
+    "solution": "diagnose_gpu_fault"
+  },
+  {
+    "id": "graphics_012",
+    "pattern": "failed to set mode",
+    "problem": "graphics_mode_set_failed",
+    "severity": "medium",
+    "solution": "diagnose_display_mode"
+  },
+  {
+    "id": "graphics_013",
+    "pattern": "failed to set display mode",
+    "problem": "display_mode_configuration_failed",
+    "severity": "medium",
+    "solution": "diagnose_display_mode"
+  },
+  {
+    "id": "graphics_014",
+    "pattern": "cannot open display",
+    "problem": "display_connection_failed",
+    "severity": "medium",
+    "solution": "diagnose_display_server"
+  },
+  {
+    "id": "graphics_015",
+    "pattern": "display is not available",
+    "problem": "display_unavailable",
+    "severity": "medium",
+    "solution": "diagnose_display_server"
+  },
+  {
+    "id": "graphics_016",
+    "pattern": "Xorg crashed",
+    "problem": "xorg_crash",
+    "severity": "high",
+    "solution": "diagnose_xorg"
+  },
+  {
+    "id": "graphics_017",
+    "pattern": "X server terminated",
+    "problem": "x_server_terminated",
+    "severity": "high",
+    "solution": "diagnose_xorg"
+  },
+  {
+    "id": "graphics_018",
+    "pattern": "gnome-shell crashed",
+    "problem": "gnome_shell_crash",
+    "severity": "high",
+    "solution": "diagnose_gnome_shell"
+  },
+  {
+    "id": "graphics_019",
+    "pattern": "mutter: Fatal IO error",
+    "problem": "mutter_graphics_error",
+    "severity": "high",
+    "solution": "diagnose_gnome_shell"
+  },
+  {
+    "id": "graphics_020",
+    "pattern": "Wayland compositor crashed",
+    "problem": "wayland_compositor_crash",
+    "severity": "high",
+    "solution": "diagnose_wayland"
+  },
+  {
+    "id": "graphics_021",
+    "pattern": "failed to create gbm device",
+    "problem": "gbm_device_creation_failed",
+    "severity": "high",
+    "solution": "diagnose_gbm"
+  },
+  {
+    "id": "graphics_022",
+    "pattern": "EGL_NOT_INITIALIZED",
+    "problem": "egl_initialization_failed",
+    "severity": "medium",
+    "solution": "diagnose_egl"
+  },
+  {
+    "id": "graphics_023",
+    "pattern": "GLXBadContext",
+    "problem": "glx_context_error",
+    "severity": "medium",
+    "solution": "diagnose_opengl"
+  },
+  {
+    "id": "graphics_024",
+    "pattern": "OpenGL renderer unavailable",
+    "problem": "opengl_renderer_unavailable",
+    "severity": "medium",
+    "solution": "diagnose_opengl"
+  },
+  {
+    "id": "graphics_025",
+    "pattern": "DRM device not found",
+    "problem": "drm_device_missing",
+    "severity": "high",
+    "solution": "diagnose_drm"
+  },
+  {
+    "id": "graphics_026",
+    "pattern": "failed to load firmware for GPU",
+    "problem": "gpu_firmware_missing",
+    "severity": "high",
+    "solution": "install_gpu_firmware"
+  },
+  {
+    "id": "graphics_027",
+    "pattern": "failed to load display driver",
+    "problem": "display_driver_load_failed",
+    "severity": "high",
+    "solution": "diagnose_display_driver"
+  },
+  {
+    "id": "graphics_028",
+    "pattern": "screen flicker",
+    "problem": "display_flickering",
+    "severity": "medium",
+    "solution": "diagnose_display_flickering"
+  },
+  {
+    "id": "graphics_029",
+    "pattern": "black screen",
+    "problem": "graphics_black_screen",
+    "severity": "high",
+    "solution": "diagnose_black_screen"
+  },
+  {
+    "id": "graphics_030",
+    "pattern": "display disconnected",
+    "problem": "display_disconnected",
+    "severity": "medium",
+    "solution": "diagnose_display_connection"
+  },
+  {
+    "id": "graphics_031",
+    "pattern": "gpu not detected",
+    "problem": "graphics_gpu_not_detected",
+    "severity": "high",
+    "solution": "check_graphics_configuration"
+  },
+  {
+    "id": "graphics_032",
+    "pattern": "drm device missing",
+    "problem": "drm_device_missing_again",
+    "severity": "high",
+    "solution": "diagnose_drm"
+  },
+  {
+    "id": "graphics_033",
+    "pattern": "intel gpu probe failed",
+    "problem": "intel_graphics_probe_failed_again",
+    "severity": "high",
+    "solution": "diagnose_intel_graphics"
+  },
+  {
+    "id": "graphics_034",
+    "pattern": "nvidia module failed to load",
+    "problem": "nvidia_module_load_failed",
+    "severity": "high",
+    "solution": "diagnose_nvidia_driver"
+  },
+  {
+    "id": "graphics_035",
+    "pattern": "amdgpu init failed",
+    "problem": "amdgpu_initialization_failed_again",
+    "severity": "high",
+    "solution": "diagnose_amdgpu_driver"
+  },
+  {
+    "id": "graphics_036",
+    "pattern": "gpu reset loop",
+    "problem": "gpu_reset_loop",
+    "severity": "high",
+    "solution": "diagnose_gpu_reset"
+  },
+  {
+    "id": "graphics_037",
+    "pattern": "gpu hang detected",
+    "problem": "gpu_hang_detected",
+    "severity": "high",
+    "solution": "diagnose_gpu_hang"
+  },
+  {
+    "id": "graphics_038",
+    "pattern": "gpu fault reported",
+    "problem": "gpu_fault_reported",
+    "severity": "high",
+    "solution": "diagnose_gpu_fault"
+  },
+  {
+    "id": "graphics_039",
+    "pattern": "display configuration failed",
+    "problem": "display_mode_configuration_failed_again",
+    "severity": "medium",
+    "solution": "diagnose_display_configuration"
+  },
+  {
+    "id": "graphics_040",
+    "pattern": "screen resolution invalid",
+    "problem": "invalid_display_mode",
+    "severity": "info",
+    "solution": "diagnose_display_mode"
+  },
+  {
+    "id": "graphics_041",
+    "pattern": "display server no screens",
+    "problem": "display_server_no_screens_again",
+    "severity": "high",
+    "solution": "diagnose_display_server"
+  },
+  {
+    "id": "graphics_042",
+    "pattern": "X server terminated unexpectedly",
+    "problem": "x_server_terminated_again",
+    "severity": "high",
+    "solution": "diagnose_xorg"
+  },
+  {
+    "id": "graphics_043",
+    "pattern": "gnome shell graphics error",
+    "problem": "gnome_shell_graphics_error",
+    "severity": "high",
+    "solution": "diagnose_gnome_shell"
+  },
+  {
+    "id": "graphics_044",
+    "pattern": "wayland compositor crash",
+    "problem": "wayland_compositor_crash_again",
+    "severity": "high",
+    "solution": "diagnose_wayland"
+  },
+  {
+    "id": "graphics_045",
+    "pattern": "gbm device creation failed",
+    "problem": "gbm_device_creation_failed_again",
+    "severity": "high",
+    "solution": "diagnose_gbm"
+  },
+  {
+    "id": "graphics_046",
+    "pattern": "egl initialization failed",
+    "problem": "egl_initialization_failed_again",
+    "severity": "medium",
+    "solution": "diagnose_egl"
+  },
+  {
+    "id": "graphics_047",
+    "pattern": "opengl context failed",
+    "problem": "opengl_context_failed",
+    "severity": "medium",
+    "solution": "diagnose_opengl"
+  },
+  {
+    "id": "graphics_048",
+    "pattern": "gpu firmware failed to load",
+    "problem": "gpu_firmware_load_failed",
+    "severity": "high",
+    "solution": "install_gpu_firmware"
+  },
+  {
+    "id": "graphics_049",
+    "pattern": "display driver mismatch",
+    "problem": "display_driver_mismatch",
+    "severity": "high",
+    "solution": "diagnose_display_driver"
+  },
+  {
+    "id": "graphics_050",
+    "pattern": "screen flicker recurring",
+    "problem": "recurring_screen_flicker",
+    "severity": "medium",
+    "solution": "diagnose_display_flickering"
+  },
+  {
+    "id": "graphics_051",
+    "pattern": "black screen after boot",
+    "problem": "black_screen_after_boot",
+    "severity": "high",
+    "solution": "diagnose_black_screen"
+  },
+  {
+    "id": "graphics_052",
+    "pattern": "display disconnected unexpectedly",
+    "problem": "display_disconnected_again",
+    "severity": "medium",
+    "solution": "diagnose_display_connection"
+  },
+  {
+    "id": "graphics_053",
+    "pattern": "graphics card not found",
+    "problem": "graphics_card_not_detected",
+    "severity": "high",
+    "solution": "check_graphics_configuration"
+  },
+  {
+    "id": "graphics_054",
+    "pattern": "vulkan loader missing",
+    "problem": "vulkan_loader_missing",
+    "severity": "medium",
+    "solution": "diagnose_opengl"
+  },
+  {
+    "id": "graphics_055",
+    "pattern": "mesa driver failed",
+    "problem": "mesa_driver_failed",
+    "severity": "high",
+    "solution": "diagnose_display_driver"
+  },
+  {
+    "id": "graphics_056",
+    "pattern": "renderer unavailable",
+    "problem": "graphics_renderer_unavailable",
+    "severity": "medium",
+    "solution": "diagnose_opengl"
+  },
+  {
+    "id": "graphics_057",
+    "pattern": "kms failed to initialize",
+    "problem": "kms_initialization_failed",
+    "severity": "high",
+    "solution": "diagnose_drm"
+  },
+  {
+    "id": "graphics_058",
+    "pattern": "DRM card busy",
+    "problem": "drm_card_busy",
+    "severity": "medium",
+    "solution": "diagnose_drm"
+  },
+  {
+    "id": "graphics_059",
+    "pattern": "frozen graphics pipeline",
+    "problem": "graphics_pipeline_frozen",
+    "severity": "high",
+    "solution": "diagnose_gpu_hardware"
+  },
+  {
+    "id": "graphics_060",
+    "pattern": "display refresh rate problem",
+    "problem": "refresh_rate_problem",
+    "severity": "info",
+    "solution": "diagnose_display_mode"
+  },
+  {
+    "id": "graphics_061",
+    "pattern": "cursor disappears after login",
+    "problem": "cursor_disappears_after_login",
+    "severity": "info",
+    "solution": "diagnose_display_configuration"
+  },
+  {
+    "id": "graphics_062",
+    "pattern": "graphics stack reset required",
+    "problem": "graphics_stack_reset_required",
+    "severity": "medium",
+    "solution": "diagnose_display_driver"
+  },
+  {
+    "id": "graphics_063",
+    "pattern": "brightness control failing",
+    "problem": "brightness_control_failed",
+    "severity": "info",
+    "solution": "diagnose_display_configuration"
+  }
+]

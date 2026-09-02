@@ -1,0 +1,450 @@
+[
+  {
+    "id": "packages_001",
+    "pattern": "Unable to locate package",
+    "problem": "package_not_found",
+    "severity": "medium",
+    "solution": "update_package_lists"
+  },
+  {
+    "id": "packages_002",
+    "pattern": "Could not get lock",
+    "problem": "package_manager_locked",
+    "severity": "medium",
+    "solution": "diagnose_package_lock"
+  },
+  {
+    "id": "packages_003",
+    "pattern": "Could not get lock /var/lib/dpkg/lock",
+    "problem": "dpkg_locked",
+    "severity": "medium",
+    "solution": "diagnose_package_lock"
+  },
+  {
+    "id": "packages_004",
+    "pattern": "dpkg was interrupted",
+    "problem": "dpkg_interrupted",
+    "severity": "high",
+    "solution": "configure_dpkg"
+  },
+  {
+    "id": "packages_005",
+    "pattern": "dpkg returned an error code",
+    "problem": "dpkg_error",
+    "severity": "high",
+    "solution": "diagnose_dpkg"
+  },
+  {
+    "id": "packages_006",
+    "pattern": "Sub-process /usr/bin/dpkg returned an error code",
+    "problem": "dpkg_subprocess_error",
+    "severity": "high",
+    "solution": "diagnose_dpkg"
+  },
+  {
+    "id": "packages_007",
+    "pattern": "unmet dependencies",
+    "problem": "unmet_dependencies",
+    "severity": "high",
+    "solution": "fix_broken_dependencies"
+  },
+  {
+    "id": "packages_008",
+    "pattern": "held broken packages",
+    "problem": "held_broken_packages",
+    "severity": "high",
+    "solution": "fix_broken_dependencies"
+  },
+  {
+    "id": "packages_009",
+    "pattern": "dependency problems",
+    "problem": "dependency_problem",
+    "severity": "high",
+    "solution": "fix_broken_dependencies"
+  },
+  {
+    "id": "packages_010",
+    "pattern": "package has no installation candidate",
+    "problem": "package_no_candidate",
+    "severity": "medium",
+    "solution": "check_package_repositories"
+  },
+  {
+    "id": "packages_011",
+    "pattern": "404 Not Found",
+    "problem": "repository_package_not_found",
+    "severity": "medium",
+    "solution": "update_package_lists"
+  },
+  {
+    "id": "packages_012",
+    "pattern": "Failed to fetch",
+    "problem": "package_download_failed",
+    "severity": "medium",
+    "solution": "diagnose_package_download"
+  },
+  {
+    "id": "packages_013",
+    "pattern": "Temporary failure resolving",
+    "problem": "package_dns_failure",
+    "severity": "high",
+    "solution": "diagnose_package_dns"
+  },
+  {
+    "id": "packages_014",
+    "pattern": "Hash Sum mismatch",
+    "problem": "package_hash_mismatch",
+    "severity": "medium",
+    "solution": "refresh_package_lists"
+  },
+  {
+    "id": "packages_015",
+    "pattern": "The repository is not signed",
+    "problem": "repository_not_signed",
+    "severity": "high",
+    "solution": "check_repository_signature"
+  },
+  {
+    "id": "packages_016",
+    "pattern": "NO_PUBKEY",
+    "problem": "repository_missing_gpg_key",
+    "severity": "high",
+    "solution": "repair_repository_key"
+  },
+  {
+    "id": "packages_017",
+    "pattern": "GPG error",
+    "problem": "repository_gpg_error",
+    "severity": "high",
+    "solution": "diagnose_repository_gpg"
+  },
+  {
+    "id": "packages_018",
+    "pattern": "Release file expired",
+    "problem": "repository_release_expired",
+    "severity": "medium",
+    "solution": "refresh_repository_metadata"
+  },
+  {
+    "id": "packages_019",
+    "pattern": "does not have a Release file",
+    "problem": "repository_release_missing",
+    "severity": "high",
+    "solution": "check_package_repositories"
+  },
+  {
+    "id": "packages_020",
+    "pattern": "Malformed entry",
+    "problem": "repository_source_malformed",
+    "severity": "high",
+    "solution": "repair_repository_sources"
+  },
+  {
+    "id": "packages_021",
+    "pattern": "Conflicting values set for option",
+    "problem": "repository_configuration_conflict",
+    "severity": "medium",
+    "solution": "repair_repository_sources"
+  },
+  {
+    "id": "packages_022",
+    "pattern": "Package is already the newest version",
+    "problem": "package_already_updated",
+    "severity": "info",
+    "solution": "check_package_status"
+  },
+  {
+    "id": "packages_023",
+    "pattern": "Removing package",
+    "problem": "package_removal",
+    "severity": "info",
+    "solution": "check_package_removal"
+  },
+  {
+    "id": "packages_024",
+    "pattern": "E: Unable to correct problems",
+    "problem": "package_dependency_resolution_failed",
+    "severity": "high",
+    "solution": "fix_broken_dependencies"
+  },
+  {
+    "id": "packages_025",
+    "pattern": "E: Internal Error",
+    "problem": "apt_internal_error",
+    "severity": "high",
+    "solution": "diagnose_apt"
+  },
+  {
+    "id": "packages_026",
+    "pattern": "E: Could not open lock file",
+    "problem": "apt_lock_file_error",
+    "severity": "medium",
+    "solution": "diagnose_package_lock"
+  },
+  {
+    "id": "packages_027",
+    "pattern": "dpkg-query: no path found",
+    "problem": "package_file_missing",
+    "severity": "medium",
+    "solution": "reinstall_package"
+  },
+  {
+    "id": "packages_028",
+    "pattern": "package is not installed",
+    "problem": "package_not_installed",
+    "severity": "medium",
+    "solution": "install_required_package"
+  },
+  {
+    "id": "packages_029",
+    "pattern": "configuration file is missing",
+    "problem": "package_configuration_missing",
+    "severity": "medium",
+    "solution": "reinstall_package"
+  },
+  {
+    "id": "packages_030",
+    "pattern": "Setting up",
+    "problem": "package_configuration",
+    "severity": "info",
+    "solution": "check_package_configuration"
+  },
+  {
+    "id": "packages_031",
+    "pattern": "repository timed out",
+    "problem": "repository_timeout",
+    "severity": "medium",
+    "solution": "diagnose_package_download"
+  },
+  {
+    "id": "packages_032",
+    "pattern": "repository metadata expired",
+    "problem": "repository_metadata_expired",
+    "severity": "medium",
+    "solution": "refresh_repository_metadata"
+  },
+  {
+    "id": "packages_033",
+    "pattern": "apt lock still held",
+    "problem": "apt_lock_still_held",
+    "severity": "high",
+    "solution": "diagnose_package_lock"
+  },
+  {
+    "id": "packages_034",
+    "pattern": "dpkg interrupted during upgrade",
+    "problem": "dpkg_interrupted_upgrade",
+    "severity": "high",
+    "solution": "diagnose_dpkg"
+  },
+  {
+    "id": "packages_035",
+    "pattern": "dpkg status file corrupted",
+    "problem": "dpkg_status_corrupted",
+    "severity": "high",
+    "solution": "configure_dpkg"
+  },
+  {
+    "id": "packages_036",
+    "pattern": "package cache corrupted",
+    "problem": "package_cache_corrupted",
+    "severity": "high",
+    "solution": "refresh_package_lists"
+  },
+  {
+    "id": "packages_037",
+    "pattern": "package dependency cycle",
+    "problem": "dependency_cycle_detected",
+    "severity": "high",
+    "solution": "fix_broken_dependencies"
+  },
+  {
+    "id": "packages_038",
+    "pattern": "broken dependencies after uninstall",
+    "problem": "broken_dependencies_after_uninstall",
+    "severity": "high",
+    "solution": "fix_broken_dependencies"
+  },
+  {
+    "id": "packages_039",
+    "pattern": "missing GPG key",
+    "problem": "repository_missing_gpg_key_again",
+    "severity": "high",
+    "solution": "repair_repository_key"
+  },
+  {
+    "id": "packages_040",
+    "pattern": "unsigned repository",
+    "problem": "repository_unsigned",
+    "severity": "medium",
+    "solution": "check_repository_signature"
+  },
+  {
+    "id": "packages_041",
+    "pattern": "repo source malformed",
+    "problem": "repository_source_malformed_again",
+    "severity": "medium",
+    "solution": "repair_repository_sources"
+  },
+  {
+    "id": "packages_042",
+    "pattern": "package list mismatch",
+    "problem": "package_list_mismatch",
+    "severity": "medium",
+    "solution": "update_package_lists"
+  },
+  {
+    "id": "packages_043",
+    "pattern": "package not found in repo",
+    "problem": "repo_package_missing",
+    "severity": "medium",
+    "solution": "check_package_repositories"
+  },
+  {
+    "id": "packages_044",
+    "pattern": "package candidate unavailable",
+    "problem": "package_candidate_unavailable",
+    "severity": "medium",
+    "solution": "check_package_repositories"
+  },
+  {
+    "id": "packages_045",
+    "pattern": "package has unmet dependencies",
+    "problem": "package_unmet_dependencies",
+    "severity": "high",
+    "solution": "fix_broken_dependencies"
+  },
+  {
+    "id": "packages_046",
+    "pattern": "held broken packages",
+    "problem": "held_broken_packages_detected",
+    "severity": "high",
+    "solution": "diagnose_apt"
+  },
+  {
+    "id": "packages_047",
+    "pattern": "package installation aborted",
+    "problem": "package_install_aborted",
+    "severity": "high",
+    "solution": "reinstall_package"
+  },
+  {
+    "id": "packages_048",
+    "pattern": "package update failed",
+    "problem": "package_update_failed",
+    "severity": "medium",
+    "solution": "diagnose_apt"
+  },
+  {
+    "id": "packages_049",
+    "pattern": "package is not installed",
+    "problem": "package_not_installed_again",
+    "severity": "medium",
+    "solution": "install_required_package"
+  },
+  {
+    "id": "packages_050",
+    "pattern": "required config file missing",
+    "problem": "package_config_missing",
+    "severity": "medium",
+    "solution": "reinstall_package"
+  },
+  {
+    "id": "packages_051",
+    "pattern": "partial package configuration",
+    "problem": "partial_package_configuration",
+    "severity": "medium",
+    "solution": "check_package_configuration"
+  },
+  {
+    "id": "packages_052",
+    "pattern": "package purge left residues",
+    "problem": "package_purge_left_residues",
+    "severity": "medium",
+    "solution": "check_package_status"
+  },
+  {
+    "id": "packages_053",
+    "pattern": "package list needs refresh",
+    "problem": "package_list_needs_refresh",
+    "severity": "info",
+    "solution": "refresh_package_lists"
+  },
+  {
+    "id": "packages_054",
+    "pattern": "package manager not responding",
+    "problem": "package_manager_not_responding",
+    "severity": "high",
+    "solution": "diagnose_apt"
+  },
+  {
+    "id": "packages_055",
+    "pattern": "apt internal error",
+    "problem": "apt_internal_error_again",
+    "severity": "high",
+    "solution": "diagnose_apt"
+  },
+  {
+    "id": "packages_056",
+    "pattern": "dependency resolution failed",
+    "problem": "dependency_resolution_failed",
+    "severity": "high",
+    "solution": "fix_broken_dependencies"
+  },
+  {
+    "id": "packages_057",
+    "pattern": "package auto-removal blocked",
+    "problem": "package_auto_removal_blocked",
+    "severity": "medium",
+    "solution": "check_package_removal"
+  },
+  {
+    "id": "packages_058",
+    "pattern": "dpkg lock file stale",
+    "problem": "dpkg_lock_file_stale",
+    "severity": "high",
+    "solution": "diagnose_package_lock"
+  },
+  {
+    "id": "packages_059",
+    "pattern": "repository source not signed",
+    "problem": "repository_source_not_signed",
+    "severity": "high",
+    "solution": "check_repository_signature"
+  },
+  {
+    "id": "packages_060",
+    "pattern": "conflicting package versions",
+    "problem": "conflicting_package_versions",
+    "severity": "high",
+    "solution": "fix_broken_dependencies"
+  },
+  {
+    "id": "packages_061",
+    "pattern": "apt update blocked by dns",
+    "problem": "apt_update_blocked_by_dns",
+    "severity": "medium",
+    "solution": "diagnose_package_dns"
+  },
+  {
+    "id": "packages_062",
+    "pattern": "package checksum mismatch",
+    "problem": "package_checksum_mismatch",
+    "severity": "high",
+    "solution": "diagnose_package_download"
+  },
+  {
+    "id": "packages_063",
+    "pattern": "taskel package metadata stale",
+    "problem": "package_metadata_stale",
+    "severity": "info",
+    "solution": "refresh_repository_metadata"
+  },
+  {
+    "id": "packages_064",
+    "pattern": "package status inconsistent",
+    "problem": "package_status_inconsistent",
+    "severity": "medium",
+    "solution": "check_package_status"
+  }
+]

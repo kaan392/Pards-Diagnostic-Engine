@@ -1,0 +1,443 @@
+[
+  {
+    "id": "network_001",
+    "pattern": "Network is unreachable",
+    "problem": "network_unreachable",
+    "severity": "high",
+    "solution": "diagnose_network_route"
+  },
+  {
+    "id": "network_002",
+    "pattern": "No route to host",
+    "problem": "no_route_to_host",
+    "severity": "high",
+    "solution": "diagnose_network_route"
+  },
+  {
+    "id": "network_003",
+    "pattern": "Destination Host Unreachable",
+    "problem": "destination_host_unreachable",
+    "severity": "high",
+    "solution": "diagnose_network_connectivity"
+  },
+  {
+    "id": "network_004",
+    "pattern": "Connection refused",
+    "problem": "connection_refused",
+    "severity": "medium",
+    "solution": "diagnose_connection_refused"
+  },
+  {
+    "id": "network_005",
+    "pattern": "Connection timed out",
+    "problem": "connection_timeout",
+    "severity": "medium",
+    "solution": "diagnose_connection_timeout"
+  },
+  {
+    "id": "network_006",
+    "pattern": "Connection reset by peer",
+    "problem": "connection_reset",
+    "severity": "medium",
+    "solution": "diagnose_connection_reset"
+  },
+  {
+    "id": "network_007",
+    "pattern": "Name or service not known",
+    "problem": "dns_resolution_failed",
+    "severity": "high",
+    "solution": "diagnose_dns"
+  },
+  {
+    "id": "network_008",
+    "pattern": "Temporary failure in name resolution",
+    "problem": "dns_temporary_failure",
+    "severity": "medium",
+    "solution": "diagnose_dns"
+  },
+  {
+    "id": "network_009",
+    "pattern": "Could not resolve host",
+    "problem": "dns_host_resolution_failed",
+    "severity": "medium",
+    "solution": "diagnose_dns"
+  },
+  {
+    "id": "network_010",
+    "pattern": "DNS resolution failed",
+    "problem": "dns_resolution_failed",
+    "severity": "medium",
+    "solution": "diagnose_dns"
+  },
+  {
+    "id": "network_011",
+    "pattern": "DHCPDISCOVER",
+    "problem": "dhcp_discovery_issue",
+    "severity": "medium",
+    "solution": "diagnose_dhcp"
+  },
+  {
+    "id": "network_012",
+    "pattern": "DHCP lease lost",
+    "problem": "dhcp_lease_lost",
+    "severity": "high",
+    "solution": "renew_dhcp_lease"
+  },
+  {
+    "id": "network_013",
+    "pattern": "DHCPACK",
+    "problem": "dhcp_acknowledged",
+    "severity": "info",
+    "solution": "check_dhcp_status"
+  },
+  {
+    "id": "network_014",
+    "pattern": "link is down",
+    "problem": "network_link_down",
+    "severity": "high",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_015",
+    "pattern": "Link is Down",
+    "problem": "network_link_down",
+    "severity": "high",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_016",
+    "pattern": "NIC link is down",
+    "problem": "network_nic_link_down",
+    "severity": "high",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_017",
+    "pattern": "carrier lost",
+    "problem": "network_carrier_lost",
+    "severity": "high",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_018",
+    "pattern": "carrier acquired",
+    "problem": "network_carrier_acquired",
+    "severity": "info",
+    "solution": "check_network_interface"
+  },
+  {
+    "id": "network_019",
+    "pattern": "NetworkManager is not running",
+    "problem": "network_manager_not_running",
+    "severity": "high",
+    "solution": "restart_network_manager"
+  },
+  {
+    "id": "network_020",
+    "pattern": "NetworkManager failed",
+    "problem": "network_manager_failure",
+    "severity": "high",
+    "solution": "diagnose_network_manager"
+  },
+  {
+    "id": "network_021",
+    "pattern": "wpa_supplicant failed",
+    "problem": "wifi_authentication_service_failed",
+    "severity": "high",
+    "solution": "diagnose_wifi_authentication"
+  },
+  {
+    "id": "network_022",
+    "pattern": "authentication failed",
+    "problem": "wifi_authentication_failed",
+    "severity": "medium",
+    "solution": "diagnose_wifi_authentication"
+  },
+  {
+    "id": "network_023",
+    "pattern": "deauthenticated",
+    "problem": "wifi_deauthenticated",
+    "severity": "medium",
+    "solution": "diagnose_wifi_connection"
+  },
+  {
+    "id": "network_024",
+    "pattern": "association failed",
+    "problem": "wifi_association_failed",
+    "severity": "medium",
+    "solution": "diagnose_wifi_connection"
+  },
+  {
+    "id": "network_025",
+    "pattern": "link becomes ready",
+    "problem": "network_link_ready",
+    "severity": "info",
+    "solution": "check_network_interface"
+  },
+  {
+    "id": "network_026",
+    "pattern": "RTNETLINK answers",
+    "problem": "rtnetlink_error",
+    "severity": "medium",
+    "solution": "diagnose_network_configuration"
+  },
+  {
+    "id": "network_027",
+    "pattern": "IP configuration could not be reserved",
+    "problem": "ip_configuration_failed",
+    "severity": "high",
+    "solution": "diagnose_ip_configuration"
+  },
+  {
+    "id": "network_028",
+    "pattern": "Failed to start network",
+    "problem": "network_start_failure",
+    "severity": "high",
+    "solution": "diagnose_network_service"
+  },
+  {
+    "id": "network_029",
+    "pattern": "Network configuration failed",
+    "problem": "network_configuration_failed",
+    "severity": "high",
+    "solution": "diagnose_network_configuration"
+  },
+  {
+    "id": "network_030",
+    "pattern": "network interface not found",
+    "problem": "network_interface_missing",
+    "severity": "high",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_031",
+    "pattern": "interface keeps dropping",
+    "problem": "network_interface_dropping",
+    "severity": "high",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_032",
+    "pattern": "wireless signal too weak",
+    "problem": "wifi_signal_too_weak",
+    "severity": "medium",
+    "solution": "diagnose_wifi_connection"
+  },
+  {
+    "id": "network_033",
+    "pattern": "wifi association timeouts",
+    "problem": "wifi_association_timeout",
+    "severity": "medium",
+    "solution": "diagnose_wifi_authentication"
+  },
+  {
+    "id": "network_034",
+    "pattern": "dhcp request failed repeatedly",
+    "problem": "dhcp_request_failed_repeatedly",
+    "severity": "high",
+    "solution": "diagnose_dhcp"
+  },
+  {
+    "id": "network_035",
+    "pattern": "lease renewal failed",
+    "problem": "dhcp_lease_renewal_failed",
+    "severity": "high",
+    "solution": "renew_dhcp_lease"
+  },
+  {
+    "id": "network_036",
+    "pattern": "gateway unreachable",
+    "problem": "gateway_unreachable",
+    "severity": "high",
+    "solution": "diagnose_network_route"
+  },
+  {
+    "id": "network_037",
+    "pattern": "ping response timeout",
+    "problem": "ping_response_timeout",
+    "severity": "medium",
+    "solution": "diagnose_network_connectivity"
+  },
+  {
+    "id": "network_038",
+    "pattern": "server unreachable over vpn",
+    "problem": "vpn_server_unreachable",
+    "severity": "high",
+    "solution": "diagnose_network_connectivity"
+  },
+  {
+    "id": "network_039",
+    "pattern": "remote host closed connection",
+    "problem": "remote_host_closed_connection",
+    "severity": "medium",
+    "solution": "diagnose_connection_reset"
+  },
+  {
+    "id": "network_040",
+    "pattern": "connection aborted",
+    "problem": "connection_aborted",
+    "severity": "medium",
+    "solution": "diagnose_connection_reset"
+  },
+  {
+    "id": "network_041",
+    "pattern": "dns server not responding",
+    "problem": "dns_server_not_responding",
+    "severity": "high",
+    "solution": "diagnose_dns"
+  },
+  {
+    "id": "network_042",
+    "pattern": "dns lookup stale cache",
+    "problem": "dns_cache_stale",
+    "severity": "info",
+    "solution": "diagnose_dns"
+  },
+  {
+    "id": "network_043",
+    "pattern": "IPv6 route issue",
+    "problem": "ipv6_route_issue",
+    "severity": "medium",
+    "solution": "diagnose_network_route"
+  },
+  {
+    "id": "network_044",
+    "pattern": "IPv4 config missing",
+    "problem": "ipv4_config_missing",
+    "severity": "high",
+    "solution": "diagnose_ip_configuration"
+  },
+  {
+    "id": "network_045",
+    "pattern": "network manager disabled",
+    "problem": "network_manager_disabled",
+    "severity": "medium",
+    "solution": "restart_network_manager"
+  },
+  {
+    "id": "network_046",
+    "pattern": "network service failed to start",
+    "problem": "network_service_start_failed",
+    "severity": "high",
+    "solution": "diagnose_network_service"
+  },
+  {
+    "id": "network_047",
+    "pattern": "wifi authentication rejected",
+    "problem": "wifi_auth_rejected",
+    "severity": "medium",
+    "solution": "diagnose_wifi_authentication"
+  },
+  {
+    "id": "network_048",
+    "pattern": "wpa_supplicant crashed",
+    "problem": "wpa_supplicant_crashed",
+    "severity": "high",
+    "solution": "diagnose_wifi_authentication"
+  },
+  {
+    "id": "network_049",
+    "pattern": "link state changed repeatedly",
+    "problem": "network_link_state_flapping",
+    "severity": "medium",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_050",
+    "pattern": "carrier signal lost",
+    "problem": "carrier_signal_lost",
+    "severity": "high",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_051",
+    "pattern": "dns resolution loop",
+    "problem": "dns_resolution_loop",
+    "severity": "high",
+    "solution": "diagnose_dns"
+  },
+  {
+    "id": "network_052",
+    "pattern": "random network disconnects",
+    "problem": "random_network_disconnects",
+    "severity": "medium",
+    "solution": "diagnose_network_configuration"
+  },
+  {
+    "id": "network_053",
+    "pattern": "network interface missing after reboot",
+    "problem": "network_interface_missing_after_reboot",
+    "severity": "high",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_054",
+    "pattern": "NIC driver mismatched",
+    "problem": "nic_driver_mismatch",
+    "severity": "high",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_055",
+    "pattern": "gateway route blackholed",
+    "problem": "route_blackholed",
+    "severity": "high",
+    "solution": "diagnose_network_route"
+  },
+  {
+    "id": "network_056",
+    "pattern": "usb ethernet adapter not found",
+    "problem": "usb_ethernet_adapter_missing",
+    "severity": "medium",
+    "solution": "diagnose_network_interface"
+  },
+  {
+    "id": "network_057",
+    "pattern": "network timeout during apt update",
+    "problem": "apt_update_network_timeout",
+    "severity": "medium",
+    "solution": "diagnose_package_dns"
+  },
+  {
+    "id": "network_058",
+    "pattern": "interface mtu mismatch",
+    "problem": "mtu_mismatch",
+    "severity": "medium",
+    "solution": "diagnose_network_configuration"
+  },
+  {
+    "id": "network_059",
+    "pattern": "network manager state invalid",
+    "problem": "network_manager_state_invalid",
+    "severity": "medium",
+    "solution": "diagnose_network_manager"
+  },
+  {
+    "id": "network_060",
+    "pattern": "connection refused on localhost",
+    "problem": "localhost_connection_refused",
+    "severity": "info",
+    "solution": "diagnose_connection_refused"
+  },
+  {
+    "id": "network_061",
+    "pattern": "hostname resolution failed",
+    "problem": "hostname_resolution_failed",
+    "severity": "medium",
+    "solution": "diagnose_dns"
+  },
+  {
+    "id": "network_062",
+    "pattern": "wireless adapter not ready",
+    "problem": "wireless_adapter_not_ready",
+    "severity": "high",
+    "solution": "diagnose_wifi_connection"
+  },
+  {
+    "id": "network_063",
+    "pattern": "network bonding configuration issue",
+    "problem": "network_bonding_config_issue",
+    "severity": "medium",
+    "solution": "diagnose_network_configuration"
+  }
+]

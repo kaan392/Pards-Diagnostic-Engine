@@ -1,0 +1,450 @@
+[
+  {
+    "id": "systemd_001",
+    "pattern": "Failed to start",
+    "problem": "service_start_failure",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_002",
+    "pattern": "Failed to stop",
+    "problem": "service_stop_failure",
+    "severity": "medium",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_003",
+    "pattern": "Failed to restart",
+    "problem": "service_restart_failure",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_004",
+    "pattern": "Failed with result 'exit-code'",
+    "problem": "service_exit_code_failure",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_005",
+    "pattern": "Failed with result 'timeout'",
+    "problem": "service_timeout",
+    "severity": "high",
+    "solution": "diagnose_service_timeout"
+  },
+  {
+    "id": "systemd_006",
+    "pattern": "Start request repeated too quickly",
+    "problem": "service_start_rate_limit",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_007",
+    "pattern": "Main process exited",
+    "problem": "service_main_process_exited",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_008",
+    "pattern": "Unit entered failed state",
+    "problem": "unit_failed",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_009",
+    "pattern": "Unit not found",
+    "problem": "unit_not_found",
+    "severity": "medium",
+    "solution": "check_service_unit"
+  },
+  {
+    "id": "systemd_010",
+    "pattern": "Unit file not found",
+    "problem": "unit_file_missing",
+    "severity": "medium",
+    "solution": "check_service_unit"
+  },
+  {
+    "id": "systemd_011",
+    "pattern": "Dependency failed for",
+    "problem": "service_dependency_failed",
+    "severity": "high",
+    "solution": "diagnose_service_dependencies"
+  },
+  {
+    "id": "systemd_012",
+    "pattern": "Dependency failed",
+    "problem": "systemd_dependency_failure",
+    "severity": "high",
+    "solution": "diagnose_service_dependencies"
+  },
+  {
+    "id": "systemd_013",
+    "pattern": "Job failed",
+    "problem": "systemd_job_failed",
+    "severity": "high",
+    "solution": "diagnose_systemd_job"
+  },
+  {
+    "id": "systemd_014",
+    "pattern": "Job running",
+    "problem": "systemd_job_running",
+    "severity": "info",
+    "solution": "check_systemd_jobs"
+  },
+  {
+    "id": "systemd_015",
+    "pattern": "Timed out waiting for device",
+    "problem": "device_wait_timeout",
+    "severity": "high",
+    "solution": "diagnose_device_timeout"
+  },
+  {
+    "id": "systemd_016",
+    "pattern": "Timed out waiting for",
+    "problem": "systemd_wait_timeout",
+    "severity": "high",
+    "solution": "diagnose_systemd_timeout"
+  },
+  {
+    "id": "systemd_017",
+    "pattern": "Control process exited",
+    "problem": "service_control_process_failed",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_018",
+    "pattern": "Failed to execute start",
+    "problem": "service_start_command_failed",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_019",
+    "pattern": "Failed to execute stop",
+    "problem": "service_stop_command_failed",
+    "severity": "medium",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_020",
+    "pattern": "Failed to execute reload",
+    "problem": "service_reload_failed",
+    "severity": "medium",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_021",
+    "pattern": "Permission denied",
+    "problem": "systemd_permission_denied",
+    "severity": "high",
+    "solution": "check_service_permissions"
+  },
+  {
+    "id": "systemd_022",
+    "pattern": "Failed to load configuration",
+    "problem": "systemd_configuration_failed",
+    "severity": "high",
+    "solution": "check_service_configuration"
+  },
+  {
+    "id": "systemd_023",
+    "pattern": "Invalid argument",
+    "problem": "systemd_invalid_argument",
+    "severity": "medium",
+    "solution": "check_service_configuration"
+  },
+  {
+    "id": "systemd_024",
+    "pattern": "Failed to create bus connection",
+    "problem": "systemd_bus_connection_failed",
+    "severity": "high",
+    "solution": "diagnose_systemd_bus"
+  },
+  {
+    "id": "systemd_025",
+    "pattern": "Failed to connect to bus",
+    "problem": "systemd_bus_unavailable",
+    "severity": "high",
+    "solution": "diagnose_systemd_bus"
+  },
+  {
+    "id": "systemd_026",
+    "pattern": "Failed to listen on",
+    "problem": "systemd_socket_listen_failed",
+    "severity": "high",
+    "solution": "diagnose_systemd_socket"
+  },
+  {
+    "id": "systemd_027",
+    "pattern": "Address already in use",
+    "problem": "service_port_in_use",
+    "severity": "medium",
+    "solution": "diagnose_service_port"
+  },
+  {
+    "id": "systemd_028",
+    "pattern": "Watchdog timeout",
+    "problem": "service_watchdog_timeout",
+    "severity": "high",
+    "solution": "diagnose_service_watchdog"
+  },
+  {
+    "id": "systemd_029",
+    "pattern": "OOM killed",
+    "problem": "service_oom_killed",
+    "severity": "high",
+    "solution": "diagnose_service_memory"
+  },
+  {
+    "id": "systemd_030",
+    "pattern": "Start operation timed out",
+    "problem": "service_start_timeout",
+    "severity": "high",
+    "solution": "diagnose_service_timeout"
+  },
+  {
+    "id": "systemd_031",
+    "pattern": "service failed to start",
+    "problem": "service_failed_to_start_again",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_032",
+    "pattern": "service stop failed",
+    "problem": "service_stop_failed_again",
+    "severity": "medium",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_033",
+    "pattern": "service restart loop",
+    "problem": "service_restart_loop",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_034",
+    "pattern": "unit failed to load",
+    "problem": "unit_failed_to_load",
+    "severity": "high",
+    "solution": "check_service_unit"
+  },
+  {
+    "id": "systemd_035",
+    "pattern": "unit file missing",
+    "problem": "unit_file_missing_again",
+    "severity": "medium",
+    "solution": "check_service_unit"
+  },
+  {
+    "id": "systemd_036",
+    "pattern": "dependency chain broken",
+    "problem": "service_dependency_chain_broken",
+    "severity": "high",
+    "solution": "diagnose_service_dependencies"
+  },
+  {
+    "id": "systemd_037",
+    "pattern": "systemd job failed",
+    "problem": "systemd_job_failed_again",
+    "severity": "high",
+    "solution": "diagnose_systemd_job"
+  },
+  {
+    "id": "systemd_038",
+    "pattern": "job still running",
+    "problem": "systemd_job_still_running",
+    "severity": "info",
+    "solution": "check_systemd_jobs"
+  },
+  {
+    "id": "systemd_039",
+    "pattern": "device timeout while booting",
+    "problem": "device_timeout_while_booting",
+    "severity": "high",
+    "solution": "diagnose_device_timeout"
+  },
+  {
+    "id": "systemd_040",
+    "pattern": "service timeout occurred",
+    "problem": "service_timeout_occurred_again",
+    "severity": "high",
+    "solution": "diagnose_service_timeout"
+  },
+  {
+    "id": "systemd_041",
+    "pattern": "systemd unit marked failed",
+    "problem": "systemd_unit_failed",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_042",
+    "pattern": "service crash loop",
+    "problem": "service_crash_loop",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_043",
+    "pattern": "main process exited unexpectedly",
+    "problem": "service_main_process_exited",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_044",
+    "pattern": "start operation timed out",
+    "problem": "service_start_timeout_again",
+    "severity": "high",
+    "solution": "diagnose_service_timeout"
+  },
+  {
+    "id": "systemd_045",
+    "pattern": "socket activation failed",
+    "problem": "socket_activation_failed",
+    "severity": "high",
+    "solution": "diagnose_systemd_socket"
+  },
+  {
+    "id": "systemd_046",
+    "pattern": "bus connection failed",
+    "problem": "systemd_bus_connection_failed_again",
+    "severity": "high",
+    "solution": "diagnose_systemd_bus"
+  },
+  {
+    "id": "systemd_047",
+    "pattern": "bus unavailable",
+    "problem": "systemd_bus_unavailable_again",
+    "severity": "high",
+    "solution": "diagnose_systemd_bus"
+  },
+  {
+    "id": "systemd_048",
+    "pattern": "service port conflict",
+    "problem": "service_port_conflict",
+    "severity": "medium",
+    "solution": "diagnose_service_port"
+  },
+  {
+    "id": "systemd_049",
+    "pattern": "watchdog timeout for service",
+    "problem": "service_watchdog_timeout_again",
+    "severity": "high",
+    "solution": "diagnose_service_watchdog"
+  },
+  {
+    "id": "systemd_050",
+    "pattern": "service memory pressure",
+    "problem": "service_memory_pressure",
+    "severity": "high",
+    "solution": "diagnose_service_memory"
+  },
+  {
+    "id": "systemd_051",
+    "pattern": "service permission denied",
+    "problem": "service_permission_denied",
+    "severity": "high",
+    "solution": "check_service_permissions"
+  },
+  {
+    "id": "systemd_052",
+    "pattern": "service config invalid",
+    "problem": "service_config_invalid",
+    "severity": "high",
+    "solution": "check_service_configuration"
+  },
+  {
+    "id": "systemd_053",
+    "pattern": "permission denied by systemd",
+    "problem": "systemd_permission_denied_again",
+    "severity": "high",
+    "solution": "check_service_permissions"
+  },
+  {
+    "id": "systemd_054",
+    "pattern": "job queue blocked",
+    "problem": "systemd_job_queue_blocked",
+    "severity": "medium",
+    "solution": "check_systemd_jobs"
+  },
+  {
+    "id": "systemd_055",
+    "pattern": "socket service failed",
+    "problem": "socket_service_failed",
+    "severity": "high",
+    "solution": "diagnose_systemd_socket"
+  },
+  {
+    "id": "systemd_056",
+    "pattern": "service reload failed",
+    "problem": "service_reload_failed_again",
+    "severity": "medium",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_057",
+    "pattern": "dependency timeout",
+    "problem": "systemd_dependency_timeout",
+    "severity": "high",
+    "solution": "diagnose_service_dependencies"
+  },
+  {
+    "id": "systemd_058",
+    "pattern": "service manager not responding",
+    "problem": "systemd_manager_not_responding",
+    "severity": "high",
+    "solution": "diagnose_systemd_job"
+  },
+  {
+    "id": "systemd_059",
+    "pattern": "device wait timeout",
+    "problem": "device_wait_timeout_again",
+    "severity": "high",
+    "solution": "diagnose_device_timeout"
+  },
+  {
+    "id": "systemd_060",
+    "pattern": "unit not found",
+    "problem": "systemd_unit_not_found",
+    "severity": "medium",
+    "solution": "check_service_unit"
+  },
+  {
+    "id": "systemd_061",
+    "pattern": "service state invalid",
+    "problem": "service_state_invalid",
+    "severity": "medium",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_062",
+    "pattern": "service start command failed",
+    "problem": "service_start_command_failed_again",
+    "severity": "high",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_063",
+    "pattern": "service reload command failed",
+    "problem": "service_reload_command_failed",
+    "severity": "medium",
+    "solution": "diagnose_service"
+  },
+  {
+    "id": "systemd_064",
+    "pattern": "process exited on timeout",
+    "problem": "service_process_exited_on_timeout",
+    "severity": "high",
+    "solution": "diagnose_service_timeout"
+  }
+]
